@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.kayzej.jeffwebsiteapi.pojo.Message;
+import com.kayzej.jeffwebsiteapi.entity.Message;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.*;
@@ -42,6 +42,8 @@ public class VisitorController {
     })
     @PostMapping(value = "/api/recordMessage", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<HttpStatus> recordMessage(@Valid @RequestBody Message message) {
+        
+        
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }

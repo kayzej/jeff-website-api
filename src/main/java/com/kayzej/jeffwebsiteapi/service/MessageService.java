@@ -1,5 +1,7 @@
 package com.kayzej.jeffwebsiteapi.service;
 
-public class MessageService {
-  
+import com.kayzej.jeffwebsiteapi.entity.Message;
+
+public interface MessageService {
+  Message saveMessage(Message message);
 }

@@ -1,4 +1,4 @@
-package com.kayzej.jeffwebsiteapi.pojo;
+package com.kayzej.jeffwebsiteapi.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
